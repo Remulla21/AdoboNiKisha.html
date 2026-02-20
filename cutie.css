@@ -1,0 +1,144 @@
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('https://img.freepik.com/free-vector/diwali-festival-patterned-background_53876-118874.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        nav {
+            background: rgba(255, 181, 96, 0.849);
+            padding: 15px;
+            display: flex;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(4px);
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: times, monospace;
+            padding: 8px 12px;
+        }
+
+        nav a:hover {
+            background: rgb(255, 215, 168);
+            border-radius: 4px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 30px;
+            color: black;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #b26f00;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 30px 20px 60px;
+
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            color: #b26f00;
+            font-family: "Times New Roman", Times, serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card p {
+            color: black
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .separator {
+            width: 141px;
+            height: 2px;
+            background-color: #b26f00;
+            margin: 10px 0 15px 0;
+            border-radius: 5px;
+        }
+
+        .section {
+            color: #b26f00;
+        }
+
+        .trivia-list {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        .trivia-list li {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+
+
+
+        .container {
+            padding: 30px;
+            color: #d18615;
+            font-family: "Times New Roman", Times, serif;
+            max-width: 900px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+              color: black;
+        }
+
+        .fact-card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: black;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .fact-card h3 {
+            margin-top: 0;
+              color: #b26f00;
+        }
+
+        .fact-card p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
