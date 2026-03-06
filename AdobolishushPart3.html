@@ -16,18 +16,29 @@
     </nav>
 
     <div class="container">
+
         <h1>Adobo Recipes</h1>
 
         <p class="intro">
             Learn how to cook delicious Filipino adobo at home. These recipes are simple,
-            flavorful, and perfect for beginners. Follow the steps and enjoy the rich,
-            savory taste of this iconic Filipino dish.
+            flavorful, and perfect for beginners.
         </p>
 
-        <div class="fact-card">
+        <button onclick="showAll()">Show All</button>
+        <button onclick="filterRecipe('chicken')">Chicken</button>
+        <button onclick="filterRecipe('pork')">Pork</button>
+        <button onclick="filterRecipe('gata')">Gata</button>
+        <button onclick="filterRecipe('pusit')">Pusit</button>
+        <button onclick="filterRecipe('sitaw')">Sitaw</button>
+        <button onclick="filterRecipe('tips')">Tips</button>
+
+        <br><br>
+
+        <div class="fact-card chicken">
             <h3>Classic Chicken Adobo</h3>
             <img src="https://www.seriouseats.com/thmb/uc8nb040OwgXekR9obuhEqm8WoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__10__20191023-chicken-adobo-vicky-wasik-19-12ce105a2e1a44dfb1e2673775118064.jpg"
-                alt="manuk" style="border-radius: 4px;" height="200" width="300">
+                alt="manuk" height="200" width="300">
+
             <p>
                 <strong>Ingredients:</strong><br>
                 Chicken, soy sauce, vinegar, garlic, bay leaves, peppercorns, water.<br><br>
@@ -40,10 +51,11 @@
             </p>
         </div>
 
-        <div class="fact-card">
+        <div class="fact-card pork">
             <h3>Pork Adobo</h3>
             <img src="https://cdn.sanity.io/images/f3knbc2s/production/709201cb03faee5c16e438d7ac028f29b43b962a-2500x1500.jpg?auto=format"
-                alt="babuy" style="border-radius: 4px;" height="200" width="300">
+                alt="babuy" height="200" width="300">
+
             <p>
                 <strong>Ingredients:</strong><br>
                 Pork belly, soy sauce, vinegar, garlic, bay leaves, peppercorns.<br><br>
@@ -56,10 +68,11 @@
             </p>
         </div>
 
-        <div class="fact-card">
+        <div class="fact-card gata">
             <h3>Adobo with Coconut Milk (Adobo sa Gata)</h3>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdVGXJGkwnYxZoCfCPWS7Afq2MwJMhlcSbDQ&s"
-                alt="kokunat melk" style="border-radius: 4px;" height="200" width="300">
+                alt="kokunat melk" height="200" width="300">
+
             <p>
                 <strong>Ingredients:</strong><br>
                 Chicken or pork, coconut milk, soy sauce, vinegar, garlic.<br><br>
@@ -72,10 +85,11 @@
             </p>
         </div>
 
-            <div class="fact-card">
+        <div class="fact-card pusit">
             <h3>Adobong Pusit</h3>
             <img src="https://i2.wp.com/www.foodwithmae.com/wp-content/uploads/2019/04/Adobongpusit-3.jpg?fit=1000%2C667&ssl=1"
-            alt="poset" style="border-radius: 4px;" height="200" width="300">
+                alt="poset" height="200" width="300">
+
             <p>
                 <strong>Ingredients:</strong><br>
                 Squid (pusit), soy sauce, vinegar, garlic, onion, bay leaves, pepper.<br><br>
@@ -89,10 +103,11 @@
             </p>
         </div>
 
-        <div class="fact-card">
+        <div class="fact-card sitaw">
             <h3>Adobong Sitaw</h3>
             <img src="https://cdn.sanity.io/images/f3knbc2s/production/0018ba306d63f5f9a1c783f728e9907e5ffa58a5-2500x1600.jpg?auto=format"
-            alt="setaw" style="border-radius: 4px;" height="200" width="300">
+                alt="setaw" height="200" width="300">
+
             <p>
                 <strong>Ingredients:</strong><br>
                 String beans (sitaw), soy sauce, vinegar, garlic, onion, pepper.<br><br>
@@ -106,7 +121,7 @@
             </p>
         </div>
 
-        <div class="fact-card">
+        <div class="fact-card tips">
             <h3>Cooking Tips</h3>
             <p>
                 • Let adobo rest before serving to enhance flavor.<br>
@@ -117,6 +132,34 @@
         </div>
 
     </div>
+
+    <script>
+
+        function filterRecipe(type) {
+            let cards = document.querySelectorAll(".fact-card");
+
+            cards.forEach(card => {
+                if (card.classList.contains(type)) {
+                    card.style.display = "block";
+                } else if (card.classList.contains("chicken") ||
+                    card.classList.contains("pork") ||
+                    card.classList.contains("gata") ||
+                    card.classList.contains("pusit") ||
+                    card.classList.contains("sitaw") ||
+                    card.classList.contains("tips")) {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        function showAll() {
+            let cards = document.querySelectorAll(".fact-card");
+            cards.forEach(card => {
+                card.style.display = "block";
+            });
+        }
+
+    </script>
 
 </body>
 
