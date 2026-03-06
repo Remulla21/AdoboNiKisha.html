@@ -141,4 +141,19 @@
         .fact-card p {
             font-size: 17px;
             line-height: 1.6;
+
         }
+
+        button {
+           padding: 10px 15px;
+           margin: 5px;
+           border: none;
+           background-color:rgba(255, 181, 96, 0.849);
+           color: black;
+           border-radius: 6px;
+           cursor: pointer;
+       }
+
+        button:hover {
+           background-color: rgb(255, 215, 168);
+       }
