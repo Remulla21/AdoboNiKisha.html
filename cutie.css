@@ -154,8 +154,10 @@ button {
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s;
+    font-family: "Times New Roman", Times, serif;
 }
 
    button:hover {
        background-color: rgb(255, 215, 168);
    }
+
